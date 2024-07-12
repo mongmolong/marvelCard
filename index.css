@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.marvel_container{
+    background-color: #171821;
+    width: 90%;
+    max-width: 500px;
+    padding: 3em 2em;
+    position: absolute;  
+    left: 50%;
+    top:1em;
+    border-radius: 1em;
+
+    transform: translateX(-50%);
+}
+.marvel_input_container{
+    display: grid;
+    grid-template-columns: 9fr 3fr; /*열을 9:3으로 나눔*/
+    gap: 1em;
+    & input{
+        padding: 1em 0.5em;
+        background-color: rgb(65, 65, 65);
+        border: none;
+        color:white;
+        border-radius: 0.5em;                
+    }
+    & button {
+        border: none;
+        background-color: #e01a38;
+        color:white;
+        border-radius: 0.5em;
+        cursor: pointer;
+    }
+}
+.marvel_display_container{
+    padding: 1em;
+}
+
+.marvel_container_character_image{
+    background-color: white;
+    padding: 0.5em;
+    height: 9.37em;
+    width: 9.37em;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    & img {
+        width: 100%;
+        position: relative;
+        width:block;
+        border-radius: 50%;
+    }
+}
+
+.marvel_character_name{
+    padding: 0.5em 0 0.8em 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.marvel_character_description{
+    text-align: justify;
+    color: rgb(238, 238, 238);
+}
+.marvel_list{
+    position: absolute;
+    width: 60%;
+    background-color: #171821;
+    color: white;
+    z-index: 1;
+}
+.autocomplete_items{
+    padding: 0.5em;
+    border: 0.5px solid rgba(63, 63, 63, 0.301);
+    font-weight: 400;
+}
+.autocomplete_items:hover{
+    background-color: rgba(255, 255, 255, 0.959);
+    color: rgb(36, 36, 36);
+    border: 0.5px solid rgba(63, 63, 63, 0.801);
+}
